@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JS Issue Tracker</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    </head>
+    <body onload="fetchPlayers()">
+        <div class="container">
+            <h1>Football Scout <small>by Himanshu</small></h1>
+            <div class="jumbotron">
+                <h3>Add New Player Report:</h3>
+                <form id="PlayerForm">
+                    <div class="form-group">
+                        <label for="NameInput">Name</label>
+                        <input type="text" class="form-control" id="NameInput" placeholder="Enter Player Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="PlayerPosition">Name</label>
+                        <select id="PlayerPosition" class="form-control">
+                            <option value="GK">Goalkeeper</option>
+                            <option value="DF">Defender</option>
+                            <option value="MF">Midfielder</option>
+                            <option value="FW">Forward</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Describe">Name</label>
+                        <input type="text" class="form-control" id="Describe" placeholder="Enter Player Description" />
+                    </div>
+                    <button type="submit" class="btn btn-primary id="submit">ADD</button>
+                </form>
+            </div>
+            <div class="col-lg-12">
+                <div id="playerList">
+
+                </div>
+            </div>
+            <div class="footer">
+                <p>
+                    &copy Made with love by Himanshu
+                </p>
+            </div>
+        </div>
+        <!--Chancejs-->
+        <script src="http://chancejs.com/chance.min.js"></script>
+        <!--JQuery-->
+        <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        <!--Javascript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
